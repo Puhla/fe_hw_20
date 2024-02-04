@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Создайте HTML-страницу с кнопкой. При клике на кнопку измените текст элемента 
+    с id "target" на "Привет, мир!" с использованием JavaScript и DOM. -->
+    <div>
+        <p id="target">Привет
+            <button class="changeText" onclick="changeText()"></button>
+        </p>
+    </div>
+    <!-- Создайте HTML-страницу с формой (input и button). 
+    При отправке формы выведите в консоль введенное значение из input с использованием JavaScript и DOM. -->
+    
+    <form id="myForm" onsubmit="handleSubmit(event)">
+        <label for="inputValue">Введите значение:</label>
+        <input type="text" id="inputValue" name="inputValue">
+        <button type="submit">Отправить</button>
+    </form>
+    <div class="trigger">
+        <button onclick="changeTriggerText()">Изменить текст кнопки</button>
+    </div>
+
+   
+
+    <script src="script/script.js"></script>
+</body>
+</html>
